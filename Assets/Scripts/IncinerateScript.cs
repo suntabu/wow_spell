@@ -92,8 +92,8 @@ public class IncinerateScript : MonoBehaviour
 			
 			var seg = mMoveDir.normalized * segInx * WIDTH / 6f;
 
-			var spine = Mathf.Sin (ratio * Mathf.PI * 2.5f + Time.time * 10) * Vector3.left * WIDTH / 2;
-			var wave = Vector3.left * WIDTH / 2 * Mathf.Min (1f, ratio + 0.5f);
+			var spine = Mathf.Sin (ratio * Mathf.PI * 2.5f + Time.time * 6) * Vector3.left * WIDTH * 1.5f;
+			var wave = Vector3.left * WIDTH * Mathf.Min (1f, ratio + 0.5f);
 			if (i % 2 == 0) {
 				v = transform.position - seg - wave + spine;
 			} else {
